@@ -64,6 +64,8 @@ FROM `departments`;
 
 SELECT *
 FROM `departments`;
+
+SELECT COUNT(*) AS `numero_dipartimenti` FROM `departments`;
 ```
 ## QUERY 8
 
@@ -76,4 +78,8 @@ WHERE `phone` IS NOT NULL;
 SELECT `name`, `surname`, `phone`
 FROM `teachers`
 WHERE `phone` IS TRUE;
+
+SELECT COUNT(*) AS `cellulare_prof` 
+FROM `teachers`
+WHERE `phone` IS NOT NULL;
 ```
